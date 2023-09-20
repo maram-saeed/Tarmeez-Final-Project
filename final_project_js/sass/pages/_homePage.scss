@@ -1,0 +1,259 @@
+body {
+    background-color: #f0ecff;
+}
+
+.boxCard {
+    margin: 35px 0 !important;
+    // position: relative;
+    // z-index: -1;
+}
+
+button.rounded-circle.bg-primary {
+    position: relative;
+    z-index: 9999 !important;
+}
+
+.textarea1 {
+    resize: none;
+}
+
+#user-info {
+    margin-right: 20px;
+}
+
+#posts {
+    cursor: pointer;
+}
+
+#comment-input {
+    width: 88%;
+    padding: 5px 8px;
+    outline: none;
+    border: 1px solid #888;
+    margin-right: 10px;
+}
+
+.user-main-info {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.number-info {
+    color: #777;
+    font-weight: 100;
+}
+
+.number-info span {
+    font-size: 50px;
+    color: #222;
+}
+
+/* Start Loader Styles */
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* End Loader Styles */
+
+@media (min-width: 768px) {
+    .card-body .row {
+        justify-content: space-between;
+    }
+
+    .card-body #main-info {
+        margin-left: 90px;
+    }
+
+    .card-body .row>.col-2 {
+        width: 100% !important;
+        display: flex;
+        justify-content: center
+    }
+
+    .card-body .row .col-2 #main-info-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+/* @media (min-width: 992px) {
+    .card-body .row {
+        justify-content: space-between;
+    }
+
+    .card-body .main-info {
+        margin-left: 70px;
+    }
+
+    .card-body .row>.col-2 {
+        width: 100% !important;
+        display: flex;
+        justify-content: center
+    }
+
+    .card-body .row .col-2 #main-info-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+  } */
+
+
+@media (max-width: 767px) {
+    button#sendComment {
+        width: auto !important;
+    }
+
+    // button.btn.btn-danger {
+    //     float: right !important;
+    //     position: relative;
+    //     top: 69px;
+    //     cursor: pointer;
+    // }
+
+    // button.btn.btn-secondary {
+    //     float: none !important;
+    //     right: 0 !important;
+    // }
+
+    .col-2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .user-main-info {
+        margin-top: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .card-body .row {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-info {
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    span.name-placholder {
+        font-weight: 100;
+        color: #777;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #posts-and-comments {
+        justify-content: space-between !important;
+        flex-direction: row !important;
+        width: 100%;
+    }
+}
+
+span.name-placholder {
+    font-weight: 100;
+    color: #777;
+}
