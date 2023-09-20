@@ -56,7 +56,9 @@ function getPosts(page = 1) {
                                     style="width: 60px; height: 60px;">
                                 <h5 class="d-inline">${author.username}</h5>
                             </span>
+                            <div class ="delete-edit">
                             ${editButtonContent}
+                            </div>
                         </div>
                         <div class="card-body" onclick="showPostDetails(${post.id})">
                             <img src="${post.image}" alt="" class="w-100">

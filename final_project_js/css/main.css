@@ -188,24 +188,50 @@ button.rounded-circle.bg-primary {
         height: 200px !important;
     }
   } */
+.delete-edit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.card-header button.btn.btn-danger {
+  float: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  order: 1;
+}
+
+.card-header .btn.btn-secondary {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  order: 0;
+}
+
 @media (max-width: 767px) {
   button#sendComment {
     width: auto !important;
   }
   .card-header {
     padding-bottom: 20px;
+    min-height: 100px;
   }
   .card-header button.btn.btn-danger {
-    float: right !important;
-    position: relative;
-    top: 69px !important;
-    cursor: pointer;
-    margin-bottom: 20px;
+    float: none;
+    position: absolute;
+    top: 0;
     right: 0 !important;
+    order: 1;
   }
-  button.btn.btn-secondary {
-    float: none !important;
-    right: 0 !important;
+  .card-header button.btn.btn-secondary {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    order: 0;
   }
   .col-2 {
     display: flex;

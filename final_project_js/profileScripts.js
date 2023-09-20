@@ -133,8 +133,9 @@ function getPosts() {
                             <img src="${author.profile_image}" alt="" class="img-thumbnail rounded-circle"
                                 style="width: 60px; height: 60px;">
                             <h5 class="d-inline">${author.username}</h5>
-
+                            <div class ="delete-edit">
                             ${editButtonContent}
+                            </div>
                         </div>
                         <div class="card-body" onclick="showPostDetails(${post.id})">
                             <img src="${post.image}" alt="" class="w-100">

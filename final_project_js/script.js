@@ -1,5 +1,18 @@
 const url = "https://tarmeezacademy.com/api/v1";
+let nameInput = document.getElementById("name-input");
+let count = 0;
+function countChar(name) {
+    for (let i = 0; i < name.value; i++) {
+        count++;
+    }
+    return count;
+}
 
+console.log(countChar(nameInput.value));
+
+if (countChar(nameInput.value) > 9) {
+    alert("Enter jus 9 charectars");
+}
 // Satrt Posts Requstes
 
 function createPostBtnClicked() {
