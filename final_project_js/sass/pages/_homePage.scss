@@ -204,17 +204,23 @@ button.rounded-circle.bg-primary {
         width: auto !important;
     }
 
-    // button.btn.btn-danger {
-    //     float: right !important;
-    //     position: relative;
-    //     top: 69px;
-    //     cursor: pointer;
-    // }
+    .card-header {
+        padding-bottom: 20px;
+    }
 
-    // button.btn.btn-secondary {
-    //     float: none !important;
-    //     right: 0 !important;
-    // }
+    button.btn.btn-danger {
+        float: right !important;
+        position: relative;
+        top: 69px !important;
+        cursor: pointer;
+        margin-bottom: 20px;
+        right: 0 !important;
+    }
+
+    button.btn.btn-secondary {
+        float: none !important;
+        right: 0 !important;
+    }
 
     .col-2 {
         display: flex;
