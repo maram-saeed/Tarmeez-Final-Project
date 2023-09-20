@@ -29,7 +29,7 @@ function getPosts(page = 1) {
 
                 if (isMyPost) {
                     editButtonContent = `
-                    <button class="btn btn-danger"
+                    <button class="btn btn-danger delete1"
                             style="float: right; position: relative; top: 10px; right: 10px;"
                             data-bs-toggle="modal" data-bs-target="#deletePostModal"
                             onclick="deletePostBtnClicked('${encodeURIComponent(JSON.stringify(post))}')">delete</button>
